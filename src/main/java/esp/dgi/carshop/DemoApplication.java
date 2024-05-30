@@ -12,11 +12,11 @@ import org.slf4j.LoggerFactory;
 
 @SpringBootApplication
 public class DemoApplication {
-	private static final Logger logger = LoggerFactory.getLogger(sbDemoController.class);
+	private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(sbDemoController.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 		logger.info("Car App started! Go to http://localhost:8081/dic_student_name");
 	}
 	@RestController
@@ -25,7 +25,7 @@ public class DemoApplication {
 	/**
 	 * sbDemoController
 	 */
-	 class sbDemoController {
+	 class SbDemoApplication {
 		@Value("${fullname: Imane Bacar }")
 		private String fullname;
 
